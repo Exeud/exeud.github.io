@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exευδ</title>
+  <meta name="description" content="Working notes on the experiential web: the technical, semantic, and epistemological groundwork for the human layer of a machine-mediated internet." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="masthead">
+    <p class="masthead-series">Working&nbsp;Notes&nbsp;·&nbsp;№&nbsp;0</p>
+
+    <!-- title row: name left · rsvp field fills remaining space -->
+    <div class="title-row">
+      <h1 id="title-rsvp">Ex<i>ευδ</i><span class="pron-inline">
+        <button class="audio-btn" data-audio="audio-uk" data-ipa-val="/ɪɡˈzjuːd/" aria-label="Play UK pronunciation">🔊<span class="pron-label">UK</span></button>
+        <button class="audio-btn" data-audio="audio-us" data-ipa-val="/ɪɡˈzuːd/" aria-label="Play US pronunciation">🔊<span class="pron-label">US</span></button>
+        <span class="ipa-text" id="ipa-shared"></span>
+      </span></h1>
+      <span class="rsvp-field"><span id="rsvp-display"></span></span>
+    </div>
+
+    <p class="masthead-subtitle">building the experiential web</p>
+
+    <!-- audio sources -->
+    <audio id="audio-uk" preload="none" src="https://dictionary.cambridge.org/us/media/english/uk_pron/u/uke/ukext/ukextri008.mp3"></audio>
+    <audio id="audio-us" preload="none" src="https://dictionary.cambridge.org/media/english/us_pron/e/exu/exude/exude.mp3"></audio>
+    <script src="masthead.js" defer></script>
+    <hr class="rule rule-heavy" />
+  </header>
+
+  <main>
+
+    <section class="abstract">
+      <h2 class="section-label">Abstract</h2>
+      <p>
+        The web is dividing into two layers. The <em>agentic web</em> — machine-mediated,
+        self-improving, with language models as its input/output surface — will absorb
+        retrieval, synthesis, and transaction. What remains, and what becomes more valuable
+        as it does, is the <em>experiential web</em>: the layer humans actually inhabit.
+        This site is the technical workshop for building that layer deliberately —
+        where <q>technical</q> spans not only technology but semantics, epistemology,
+        and every place where detailed inspection uncovers insights, patterns, and
+        affordances. It is written for scientists of all shapes.
+      </p>
+    </section>
+
+    <hr class="rule" />
+
+    <section>
+      <h2><span class="section-no">1</span>Premise</h2>
+      <p>
+        When information ceases to be scarce — when anything fetchable is fetched and
+        phrased instantly, for everyone — the marginal value of <em>having the answer</em>
+        tends to zero. What does not tend to zero is the irreducibly human act of being
+        somewhere, with someone, feeling something, at a time that will not come again.
+      </p>
+      <p>
+        We take this as a working hypothesis, not a slogan, and treat it the way one
+        treats any hypothesis: by attempting to make it precise enough to fail.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="section-no">2</span>Four quantities under investigation</h2>
+      <dl class="quantities">
+        <dt>Spatiality</dt>
+        <dd>
+          A sense of place: depth, scale, orientation, the body's intuition that
+          <em>here</em> differs from <em>there</em>. The web has been flat for thirty
+          years; humans never were. What are the minimal conditions under which a
+          mediated space is <em>inhabited</em> rather than viewed?
+        </dd>
+        <dt>Temporality</dt>
+        <dd>
+          A sense of time: duration, rhythm, anticipation, irreversibility. Content
+          on demand erased the event; we ask what is recovered when moments are
+          allowed to be unrepeatable.
+        </dd>
+        <dt>Expression</dt>
+        <dd>
+          A sense of voice: the capacity to make something unmistakably one's own,
+          with the idiosyncrasy that statistical machinery flattens into the average.
+          Where exactly does the flattening occur, and what resists it?
+        </dd>
+        <dt>Emotion</dt>
+        <dd>
+          A sense of stakes: the web mediated by feeling rather than feeling mediated
+          by the web. The hardest of the four to operationalise — which is precisely
+          why it is on the list.
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2><span class="section-no">3</span>Method</h2>
+      <p>
+        The inquiry runs on three tracks, pursued in the open:
+      </p>
+      <ol class="method-list">
+        <li>
+          <strong>Instruments.</strong> Software — immersive, browser-native, open
+          where possible — built to make the four quantities observable and
+          manipulable. An instrument that cannot surprise its maker is a demo,
+          not an instrument.
+        </li>
+        <li>
+          <strong>Semantics.</strong> The vocabulary of <q>experience</q> is currently
+          too soft to build with. We work toward terms precise enough to disagree
+          about productively: what is presence, what is an affordance, what is the
+          unit of an experience.
+        </li>
+        <li>
+          <strong>Epistemology.</strong> How does one <em>know</em> that an experience
+          occurred, that it differed from another, that a design caused the difference?
+          The measurement problem here is genuine and we intend to take it seriously
+          rather than gesture at it.
+        </li>
+      </ol>
+      <p>
+        Findings, instruments, and dead ends will appear here as numbered notes.
+        Some of the supporting repositories are open; some are not yet; some will
+        not be. The reasoning for each is stated where it applies.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="section-no">4</span>Participation</h2>
+      <p>
+        This work uses GitHub as its commons. Engagement is read the old-fashioned
+        way — by who turns up and what they say:
+      </p>
+      <ul class="participation">
+        <li><a href="https://github.com/Exeud/exeud.github.io/discussions">Discussions</a> — for argument, in the constructive sense.</li>
+        <li><a href="https://github.com/Exeud/exeud.github.io/issues">Issues</a> — for errors found and questions worth tracking.</li>
+        <li><a href="https://github.com/Exeud/exeud.github.io/stargazers">Stars</a> — a one-bit signal that you want this to continue.</li>
+        <li><a href="https://exeud.com/sponsor">Sponsorship</a> — for those who would rather the work went faster.</li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="closing">
+      <p>
+        The agentic web is the nervous system. The experiential web is everything
+        the nervous system is <em>for</em> — distinctly human qualities, intermediated
+        and connected by fibres and silicon, human at the surface where it counts.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="colophon">
+    <hr class="rule rule-heavy" />
+    <p>
+      <a href="https://exeud.com">exeud.com</a> ·
+      <a href="https://github.com/Exeud">github.com/Exeud</a>
+    </p>
+    <p class="colophon-note">
+      Set in the reader's own serif. No trackers, no build step.
+    </p>
+  </footer>
+
+</body>
+</html>

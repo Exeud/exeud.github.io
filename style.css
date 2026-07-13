@@ -1,0 +1,321 @@
+/* ─── Exeud · the experiential web ────────────────────────────────────────────
+   A working-papers aesthetic: ink on paper, hairline rules, numbered sections.
+   No gradients, no cards, no rounded corners, no webfonts. The reader's own
+   serif carries the text; a single rubric red does the pointing.            */
+
+:root {
+  --paper: #f6f2e9;
+  --ink: #1d1b16;
+  --ink-faint: #5d574b;
+  --rubric: #7c2d12;       /* madder red — the traditional margin colour */
+  --rule: #c9c2b2;
+  --rule-heavy: #1d1b16;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #181612;
+    --ink: #e8e2d4;
+    --ink-faint: #99917f;
+    --rubric: #d97757;
+    --rule: #3a362d;
+    --rule-heavy: #e8e2d4;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 3rem;
+  max-width: 42rem;
+  color: var(--ink);
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'onum' 1, 'liga' 1;
+}
+
+/* ── Rules ── */
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+.rule-heavy {
+  border-top: 2px solid var(--rule-heavy);
+}
+
+/* ── Masthead ── */
+
+.masthead {
+  margin-bottom: 3rem;
+}
+
+.masthead-series {
+  font-family: 'Iosevka', 'Berkeley Mono', ui-monospace, 'Cascadia Code', Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rubric);
+  margin: 0 0 2.25rem;
+}
+
+.title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  margin: 0 0 0.5rem;
+}
+
+.masthead h1 {
+  font-size: 3.25rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.masthead-subtitle {
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--ink-faint);
+  margin: 0.5rem 0 2rem;
+}
+
+.masthead .rule-heavy {
+  margin: 0;
+}
+
+.pron-inline {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.8em;
+  margin-left: 2.2em;
+  font-size: 0.28em;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: middle;
+  position: relative;
+  top: 0.4em;
+}
+
+.audio-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1.5;
+  opacity: 0.55;
+  transition: opacity 0.12s;
+}
+
+.audio-btn:hover {
+  opacity: 1;
+}
+
+.pron-label {
+  font-family: inherit;
+  font-size: 0.85em;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+  margin-left: 0.1em;
+}
+
+.ipa-text {
+  font-family: 'Iosevka', 'Berkeley Mono', ui-monospace, 'Cascadia Code', Menlo, monospace;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+  color: var(--paper);
+  transition: color 0.25s ease-in;
+}
+
+.ipa-text.ipa-playing {
+  color: var(--ink-faint);
+  transition: color 0.1s ease-out;
+}
+
+.rsvp-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  font-family: 'Iosevka', 'Berkeley Mono', ui-monospace, 'Cascadia Code', Menlo, monospace;
+  letter-spacing: 0.03em;
+  padding-bottom: 0.1em;
+}
+
+#rsvp-display {
+  color: var(--paper);
+  transition: color 0.18s ease-in;
+}
+
+#rsvp-display.rsvp-on {
+  color: var(--ink-faint);
+  transition: color 0.06s ease-out;
+}
+
+/* ── Sections ── */
+
+section {
+  margin: 2.5rem 0;
+}
+
+h2 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.75rem;
+}
+
+.section-no {
+  display: inline-block;
+  min-width: 1.6rem;
+  color: var(--rubric);
+  font-weight: 400;
+}
+
+.section-label {
+  font-family: ui-monospace, 'Cascadia Code', Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+em, q {
+  font-style: italic;
+}
+
+.abstract p {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  padding-left: 1.6rem;
+  border-left: 2px solid var(--rule);
+}
+
+/* ── Definition list: the four quantities ── */
+
+.quantities {
+  margin: 1.25rem 0 0;
+}
+
+.quantities dt {
+  font-variant: small-caps;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  color: var(--rubric);
+  margin-top: 1.25rem;
+}
+
+.quantities dd {
+  margin: 0.25rem 0 0 1.6rem;
+}
+
+/* ── Lists ── */
+
+.method-list {
+  margin: 0 0 1rem;
+  padding-left: 1.6rem;
+}
+
+.method-list li {
+  margin-bottom: 0.9rem;
+}
+
+.participation {
+  list-style: none;
+  margin: 0;
+  padding-left: 1.6rem;
+}
+
+.participation li {
+  margin-bottom: 0.4rem;
+  text-indent: -1.6rem;
+}
+
+.participation li::before {
+  content: '—';
+  color: var(--rubric);
+  margin-right: 0.75rem;
+}
+
+/* ── Links: classic underline, no decoration games ── */
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rubric);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--rubric);
+}
+
+/* ── Closing ── */
+
+.closing p {
+  font-style: italic;
+  text-align: center;
+  max-width: 34rem;
+  margin: 0 auto;
+  color: var(--ink-faint);
+}
+
+.closing em {
+  font-style: normal;
+}
+
+/* ── Colophon ── */
+
+.colophon {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.colophon .rule-heavy {
+  margin-bottom: 1.5rem;
+}
+
+.colophon p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.colophon-note {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+/* ── Small screens ── */
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 3rem;
+    font-size: 1rem;
+  }
+  .masthead h1 {
+    font-size: 2.5rem;
+  }
+}
