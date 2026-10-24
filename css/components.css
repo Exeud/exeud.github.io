@@ -1,0 +1,45 @@
+/* ── components.css ─ reusable pieces, independent of page position ───────── */
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+.rule-heavy { border-top: 2px solid var(--rule-heavy); }
+
+.section-no {
+  display: inline-block;
+  min-width: var(--indent);
+  color: var(--rubric);
+  font-weight: 400;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.method-list {
+  margin: 0 0 1rem;
+  padding-left: var(--indent);
+}
+.method-list li { margin-bottom: 0.9rem; }
+
+.dash-list {
+  list-style: none;
+  margin: 0;
+  padding-left: var(--indent);
+}
+.dash-list li {
+  margin-bottom: 0.4rem;
+  text-indent: calc(-1 * var(--indent));
+}
+.dash-list li::before {
+  content: '—';
+  color: var(--rubric);
+  margin-right: 0.75rem;
+}

@@ -1,0 +1,30 @@
+/* ── tokens.css ─ design tokens only: no selectors other than :root ───────── */
+
+:root {
+  /* colour */
+  --paper: #f6f2e9;
+  --ink: #1d1b16;
+  --ink-faint: #5d574b;
+  --rubric: #7c2d12;       /* madder red — the traditional margin colour */
+  --rule: #c9c2b2;
+  --rule-heavy: #1d1b16;
+
+  /* type */
+  --font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, serif;
+  --font-mono: 'Iosevka', 'Berkeley Mono', ui-monospace, 'Cascadia Code', Menlo, monospace;
+
+  /* layout */
+  --measure: 42rem;
+  --indent: 1.6rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #181612;
+    --ink: #e8e2d4;
+    --ink-faint: #99917f;
+    --rubric: #d97757;
+    --rule: #3a362d;
+    --rule-heavy: #e8e2d4;
+  }
+}

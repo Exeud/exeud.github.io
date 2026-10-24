@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Exευδ</title>
   <meta name="description" content="Working notes on the experiential web: the technical, semantic, and epistemological groundwork for the human layer of a machine-mediated internet." />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/masthead.css" />
+  <link rel="stylesheet" href="css/sections.css" />
 </head>
 <body>
 
   <header class="masthead">
-    <p class="masthead-series">Working&nbsp;Notes&nbsp;·&nbsp;№&nbsp;0</p>
+    <!-- <p class="masthead-series">Working&nbsp;Notes&nbsp;·&nbsp;№&nbsp;0</p> -->
 
     <!-- title row: name left · rsvp field fills remaining space -->
     <div class="title-row">
@@ -22,12 +27,11 @@
       <span class="rsvp-field"><span id="rsvp-display"></span></span>
     </div>
 
-    <p class="masthead-subtitle">building the experiential web</p>
+    <p class="masthead-subtitle">motivating the experiential web</p>
 
     <!-- audio sources -->
     <audio id="audio-uk" preload="none" src="https://dictionary.cambridge.org/us/media/english/uk_pron/u/uke/ukext/ukextri008.mp3"></audio>
     <audio id="audio-us" preload="none" src="https://dictionary.cambridge.org/media/english/us_pron/e/exu/exude/exude.mp3"></audio>
-    <script src="masthead.js" defer></script>
     <hr class="rule rule-heavy" />
   </header>
 
@@ -36,85 +40,100 @@
     <section class="abstract">
       <h2 class="section-label">Abstract</h2>
       <p>
-        The web is dividing into two layers. The <em>agentic web</em> — machine-mediated,
-        self-improving, with language models as its input/output surface — will absorb
-        retrieval, synthesis, and transaction. What remains, and what becomes more valuable
-        as it does, is the <em>experiential web</em>: the layer humans actually inhabit.
-        This site is the technical workshop for building that layer deliberately —
-        where <q>technical</q> spans not only technology but semantics, epistemology,
-        and every place where detailed inspection uncovers insights, patterns, and
-        affordances. It is written for scientists of all shapes.
+        This site - a work in progress - addresses the many areas of research that relate to and support the construction of a comprehensive immersive interaction model. It asks fundamental questions about the nature of human interaction, investigating aspects of embodiment, communication and thought. Its stance is decidedly contrustivist and seeks to bring together efforts from a variety of fields, in order to offer experimental guidance and other practical insights into the study of embodied learning and WebXR technology design.
+      </p>
+      <p>
+        Purely technical know-how is insufficient for the construction of models and patterns that can replicate human experience. This new medium is embodied, behavioural and, when we seek to use it for the systematic construction of meaning, deeply epistemological. Rather that simplify or flatten this into convenient and familiar technical frameworks, as many have tried to do, this work embraces the complexity and plurality associated with our lived experience, and offers an alternative description of the factors that inform situated training and technical development and, through ExeudVR, a framework to test it.
+      </p>
+      <p>
+        Traditional 2-dimensional interfaces have no need to include bodily movement (specialist peripherals notwithstanding) or situated logic and can, through symbolism and abstraction, simplify our attentive field to an aspect ratio and mouse pointer. Immersive interaction, referring to a first-person perspective within a (wholly or partially) digital environment, must necessarily consider many other factors. Because of this, many existing notions related to human-computer interaction fall short.
+      </p>
+      <p>
+        Whereas the technical development provides a set of distinct capabilities with which to build experiences and conduct experiments, the ideas here offer a prospective conceptual ground from which new insights, features and experiments can be conceived. Beginning with the central thesis that meaning arises from the deliberate interplay of situated affordance and embodied competence, I will explore the theoretical basis for the construction of the experiential web, and ultimately aim to offer a comprehensive pattern language for immersive learning and, beneath that, a coherent epistemological perspective.
       </p>
     </section>
 
     <hr class="rule" />
 
     <section>
-      <h2><span class="section-no">1</span>Premise</h2>
+      <h2><span class="section-no">1</span>Introduction</h2>
       <p>
-        When information ceases to be scarce — when anything fetchable is fetched and
-        phrased instantly, for everyone — the marginal value of <em>having the answer</em>
-        tends to zero. What does not tend to zero is the irreducibly human act of being
-        somewhere, with someone, and expressing something that is meaningful to you.
+        At its root, this is a study of <b>opportunity</b>, and the etymology of the word is instructive in framing what follows. From the Latin 'ob portum veniens' meaning 'coming towards a port', it was used to describe favourable winds that would allow a vessel to dock. Explicitly this indicates environmental conditions that support a particular course of action. Implicitly it requires that there also exists a crew capable of conducting such a manoeuvre. Without either the conditions or the faculty of those involved, the opportunity cannot be realised.
       </p>
       <p>
-        We take this as a working hypothesis, not a slogan, and treat it the way one
-        treats any hypothesis: by attempting to make it precise enough to fail.
+        This co-occurence - the presence of favourable conditions as well as the faculty to take advantage of them - is evidenced in various modes of systemic operation. In living systems animals take advantage of particular niches, supporting longer and more comfortable lives; in social systems language affords the ability to communicate ever more complex ideas; in psychic systems greater breadth and depth of thought permits the elicitation of increasingly sophisticated ideas. In all of these autopoietic systems, there is a trend towards greater internal complexity, motivated by an ever-evolving landscape of opportunities, itself shaped by the faculties of the system perceiving them.
+      </p>
+      <p>
+        Affordances - opportunities for action - do not only enable, but also constrain. Our bodies naturally restrict what we are capable of doing, language does not allow the transmission of entire ideas, but acts as a narrow conduit that is susceptible to misinterpretation, and minds are conditioned by patterns of thought and rely on their biological hosts to function. Each of these systems is considered "operationally closed" and, by virtue of this closure, can sense their environment and reconstitute themselves based on their sensations.   
+      </p>
+      <p>
+        Rooted in this pluralist perspective, this project is primarily concerned with designing virtual spaces that, down to the level of their programmatic design patterns, reflect the relational nature of experience and learning, and provide expansive, open-ended patterns that support cognition, interaction and communication. A unifying factor is the development of expertise, though the pathways and outcomes depend on the system in question and its <i>structural coupling</i> to its environment. A consequence of this is that, when designing virtual experiences, we are required to consider both sense and sensation; the affordances and behaviours attached to aspect of both avatar and environment must adapt to the context and operation in question.
       </p>
     </section>
 
     <section>
-      <h2><span class="section-no">2</span>Four quantities under investigation</h2>
+      <h2><span class="section-no">2</span>Areas of Investigation</h2>
       <dl class="quantities">
-        <dt>Spatiality</dt>
+        <dt>Constructivist Epistemology</dt>
         <dd>
-          A sense of place: pose, proprioception and spatial awareness. A sense that
-          <em>here</em> differs from <em>there</em>. The web has been flat for thirty
-          years; humans never were. What are the minimal conditions under which a
-          mediated space is <em>inhabited</em> rather than viewed?
+          Constructivist approaches hold that meaning is built through interaction between system and environment, rather than discovered. 
+          
+          The work does builds on the empirical foundations put forward by Niklas Luhmann's perspective on systems, in particular the idea that human experience is driven by the interplay of three main self-referential autopoietic systems: biological, psychic and social. In this framing, each of these systems exists within the mutual environment of the others and, by virtue of their operational closure, form structual couplings that, through mutual interdependence, allow for burgeoning internal complexity. 
+          
+          Of particular interest are the modes and events that arise from these structural couplings, since it is these bi-directional relationships that we seek to emulate via technological means. 
+
+          Our encounters or, more accurately, our ruminations on them, inform our habits, patterns, routines and rituals. This shows up in the opportunities we notice, the stories we tell, and the choices we make. 
         </dd>
-        <dt>Temporality</dt>
+
+        <dt>Affordance Landscapes</dt>
         <dd>
-          A sense of time: duration, rhythm, iteration and attractors building embodied 
-          competence. Procedure and ritual; including the body in deliberate practice. 
+          <p>
+            Affordances, originally conceived by Gibson in the late 1970s, have drawn considerable attention due to their process-relational relevance and cross-disciplinary applicability. Work by Reed, Ingold, Rietveld and Withagen, and others, has connected an 'affordance landscape' to choice, competence and agency, reinforcing the ecological framing of cognition and rejecting mechanistic notions of mind and behaviour. Going beyond the purely embodied notion of ecological niches and how they interface with physical capabilities, this work explores two other types of affordance: propositional affordances, communicated via language, and meta-constructive, which relate to operations of the mind.
+          </p>
+            As well as investigating the various affordances involving in communication information and physical movement, this research looks at second-order effects of affordances that permit (but do not guarantee) greater complexity of thought and/or action, which I call <i>meta-constructive</i>, to reflect their influence on conceptual patterns that, through their use, lead to improved psychic faculty and the ability to construct more complex affordances, both linguistically and through physically embodied action. They are, in this sense, closely aligned with the notion of expertise.
+          </p>
+          <p>
+            - Propositional affordances are mediated by language. Suggestion, instruction, communication. <br>  
+            - Embodied affordances and mediated by actions. Dance, gesticulation, physical performance.  <br>
+            - Meta-constructive affordances are mediated by ideas. Ideation, epiphany, insight.  <br>
+          </p>
         </dd>
-        <dt>Expression</dt>
+
+        <dt>Embodied Competence</dt>
         <dd>
-          A sense of voice. Utterance, communication and co-construction. Anticipation of 
-          an audience or recipient, and modulation towards more nuanced expression.
+          Our physical bodies, contingent on our evolutionary history, furnish us with capabilities that, with practice, may grow into expertise. Interaction within virtual environments, standing in contrast to two-dimensional interfaces, must take this into consideration, therefore comes with a raft of affordances that both enable and constrain the way we act.
+
+          - puissance. the capacity to affect, and be affected by, the environment.  
+          - faculties of the psyche, the body and our ability to communicate 
         </dd>
-        <dt>Emotion</dt>
+
+        <dt>Salient Interaction Design</dt>
         <dd>
-          A sense of stakes: the web mediated by feeling rather than feeling mediated
-          by the web. The hardest of the four to operationalise — which is precisely
-          why it is on the list.
+          
+
+          <!-- Affordances and abilities arise mutually... -->
+          
+          <!-- To flatten Alan Watts: you won't find pollinators where there is no pollen, and you won't find pollen-based reproductive systems in a place where there are no pollinators. -->
+           
         </dd>
       </dl>
     </section>
 
     <section>
-      <h2><span class="section-no">3</span>Method</h2>
+      <h2><span class="section-no">3</span>Lines of Inquiry</h2>
       <p>
-        The inquiry runs on three tracks, pursued in the open:
+        Following Luhmann's distinction of the three self-referential autopoietic systems that describe human experience - each operationally closed and part of the environment of the others - this work approaches each in turn, considering its faculties and couplings that inform the construction of a virtual space.
       </p>
       <ol class="method-list">
         <li>
-          <strong>Instruments.</strong> Software — immersive, browser-native, open
-          where possible — built to make the four quantities observable and
-          manipulable. An instrument that cannot surprise its maker is a demo,
-          not an instrument.
+          <strong>Social Systems (Communicative).</strong> 
         </li>
         <li>
-          <strong>Semantics.</strong> The vocabulary of <q>experience</q> is currently
-          too soft to build with. We work toward terms precise enough to disagree
-          about productively: what is presence, what is an affordance, what is the
-          unit of an experience.
+          <strong>The Biological System (Embodied).</strong> 
         </li>
         <li>
-          <strong>Epistemology.</strong> How does one <em>know</em> that an experience
-          occurred, that it differed from another, that a design caused the difference?
-          The measurement problem here is genuine and we intend to take it seriously
-          rather than gesture at it.
+          <strong>The Psychic System (Thought).</strong> 
+          
         </li>
       </ol>
       <p>
@@ -128,7 +147,7 @@
         This work uses GitHub as its commons. Engagement is read the old-fashioned
         way; by who turns up and what they say:
       </p>
-      <ul class="participation">
+      <ul class="dash-list">
         <li><a href="https://github.com/Exeud/exeud.github.io/discussions">Discussions</a> — for argument, in the constructive sense.</li>
         <li><a href="https://github.com/Exeud/exeud.github.io/issues">Issues</a> — for errors found and questions worth tracking.</li>
         <li><a href="https://github.com/Exeud/exeud.github.io/stargazers">Stars</a> — a one-bit signal that you want this to continue.</li>
@@ -155,5 +174,7 @@
     </p>
   </footer>
 
+  <script src="js/pronunciation.js" defer></script>
+  <script src="js/rsvp.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+/* ── base.css ─ reset and element-level defaults ──────────────────────────── */
+
+* { box-sizing: border-box; }
+
+html { background: var(--paper); }
+
+body {
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 3rem;
+  max-width: var(--measure);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'onum' 1, 'liga' 1;
+}
+
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+em, q { font-style: italic; }
+
+h2 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.75rem;
+}
+
+section { margin: 2.5rem 0; }
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rubric);
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--rubric); }
+
+@media (max-width: 480px) {
+  body { padding-top: 3rem; font-size: 1rem; }
+}

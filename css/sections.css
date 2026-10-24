@@ -1,0 +1,39 @@
+/* ── sections.css ─ page-body regions: abstract, quantities, closing, colophon ── */
+
+.abstract p {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  padding-left: var(--indent);
+  border-left: 2px solid var(--rule);
+}
+
+.quantities { margin: 1.25rem 0 0; }
+.quantities dt {
+  font-variant: small-caps;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  color: var(--rubric);
+  margin-top: 1.25rem;
+}
+.quantities dd { margin: 0.25rem 0 0 var(--indent); }
+
+.closing p {
+  font-style: italic;
+  text-align: center;
+  max-width: 34rem;
+  margin: 0 auto;
+  color: var(--ink-faint);
+}
+.closing em { font-style: normal; }
+
+.colophon {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.colophon .rule-heavy { margin-bottom: 1.5rem; }
+.colophon p { font-size: 0.9rem; margin-bottom: 0.4rem; }
+.colophon-note {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}

@@ -72,3 +72,15 @@ It will be opinionated, it will change its mind in public, and it will get into 
 *the experiential web — the part that is still ours to build*
 
 </div>
+
+---
+
+## Local preview
+
+Serve the repo root and open <http://localhost:8000>:
+
+```sh
+python3 -m http.server 8000
+```
+
+Stop with `Ctrl+C`. Hard-refresh (`Ctrl+Shift+R`) if changes don't appear. Check the browser console for 404s before pushing; pushing to `main` deploys to <https://exeud.github.io/>.
